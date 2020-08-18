@@ -54,12 +54,12 @@ module.exports = {
     new OptimizeCSSAssetsPlugin(),
     new EndWebpackPlugin(async () => {
       // 自定义域名
-      fs.writeFileSync(path.resolve(outputPath, 'CNAME'), 'www.miaoshaoxuan.xyz');
+      fs.writeFileSync(path.resolve(outputPath, 'CNAME'), 'resume.miaoshaoxuan.xyz');
 
       // 调用 Chrome 渲染出 PDF 文件
       const chromePath = findChrome();
       spawnSync(chromePath, ['--headless', '--disable-gpu', `--print-to-pdf=${path.resolve(outputPath, 'resume.pdf')}`,
-        'http://www.miaoshaoxuan.xyz' // 这里注意改成你的在线简历的网站
+        'http://resume.miaoshaoxuan.xyz' // 这里注意改成你的在线简历的网站
       ]);
     }),
   ]
