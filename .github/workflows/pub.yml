@@ -17,7 +17,7 @@ jobs:
       - name: Build
         run: |
           npm ci
-          npm run dev
+          npm run build
       - name: Commit files
         run: |
           git config --local user.email "270948479@qq.com"
