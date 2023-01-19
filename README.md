@@ -1,3 +1,3 @@
-## 一份Msx的简历
+## miaoshaoxuan Resume
 
-# 苗邵轩 | 简历
+# miaoshaoxuan | resume
